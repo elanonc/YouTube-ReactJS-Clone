@@ -1,16 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+
 import YoutubeLogo from "../assets/logo.png";
+
+import HomeIcon from "@mui/icons-material/Home";
+import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
+import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
+import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
+import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
+import LibraryMusicOutlinedIcon from "@mui/icons-material/LibraryMusicOutlined";
+import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
+
 
 const Container = styled.div`
     flex: 1;
     background-color: #202020;
     height: 100vh;
     color: #FFF;
-`
-
-const Main = styled.div`
-
 `
 
 const Wrapper = styled.div`
@@ -44,7 +50,28 @@ function Menu() {
                     YoutubeLogo
             </Logo>
             <Item>
+                <HomeIcon/>
                 Início
+            </Item>
+            <Item>
+                <ExploreOutlinedIcon/>
+                Explorar
+            </Item>
+            <Item>
+                <AppShortcutOutlinedIcon/>
+                Shorts
+            </Item>
+            <Item>
+                <SubscriptionsOutlinedIcon/>
+                Inscrições
+            </Item>
+            <Item>
+                <LibraryMusicOutlinedIcon/>
+                Biblioteca
+            </Item>
+            <Item>
+                <HistoryOutlinedIcon/>
+                Histórico
             </Item>
         </Wrapper>
     </Container>
