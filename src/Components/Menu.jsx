@@ -17,6 +17,8 @@ import LiveTvOutlinedIcon  from '@mui/icons-material/LiveTvOutlined';
 import SportsEsportsOutlinedIcon  from '@mui/icons-material/SportsEsportsOutlined';
 import SettingsOutlinedIcon  from '@mui/icons-material/SettingsOutlined';
 import TextsmsOutlinedIcon  from '@mui/icons-material/TextsmsOutlined';
+import HelpOutlineOutlinedIcon  from '@mui/icons-material/HelpOutlineOutlined';
+import OutlinedFlagIcon  from '@mui/icons-material/OutlinedFlag';
 
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 
@@ -25,6 +27,9 @@ const Container = styled.div`
     background-color: #202020;
     height: 100vh;
     color: #FFF;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
 `;
 
 const Wrapper = styled.div`
@@ -63,7 +68,7 @@ function Menu() {
         <Wrapper>
             <Logo>
                 <Img src={YoutubeLogo}/>
-                    YoutubeLogo
+                    YouTube
             </Logo>
             <Item>
                 <HomeIcon/>
@@ -117,8 +122,16 @@ function Menu() {
             </Item>
             <Hr/>
             <Item>
-                <SettingsOutlinedIcon/>
+                <OutlinedFlagIcon/>
                 Configurações
+            </Item>
+            <Item>
+                <SettingsOutlinedIcon/>
+                Histórico de denúncias
+            </Item>
+            <Item>
+                <HelpOutlineOutlinedIcon/>
+                Ajuda
             </Item>
             <Item>
                 <TextsmsOutlinedIcon/>
