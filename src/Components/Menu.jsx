@@ -8,7 +8,6 @@ import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
 import SubscriptionsOutlinedIcon from "@mui/icons-material/SubscriptionsOutlined";
 import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
 import HistoryOutlinedIcon from "@mui/icons-material/HistoryOutlined";
-import LibraryMusicOutlinedIcon from "@mui/icons-material/LibraryMusicOutlined";
 import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import MovieOutlinedIcon from '@mui/icons-material/MovieOutlined';
