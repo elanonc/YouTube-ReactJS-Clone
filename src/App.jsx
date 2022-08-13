@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
+
+import Home from "./pages/Home";
+import Video from "./pages/Video";
 
 import Menu from "./Components/Menu";
 import Navbar from "./Components/Navbar";
@@ -21,13 +25,22 @@ const Wrapper = styled.div`
 function App() {
   return (
     <Container>
-      <Menu/>
-      <Main>
-        <Navbar/>
-        <Wrapper>
-          <h1>teste</h1>
-        </Wrapper>
-      </Main>
+      <BrowserRouter>
+        <Menu/>
+        <Main>
+          <Navbar/>
+          <Wrapper>
+            <Routes>
+              <Route path="/">
+                <Route index element={Home}/>
+                <Route path="video">
+                  <Route path=":id" element={Video} />
+                </Route>
+              </Route>
+            </Routes>
+          </Wrapper>
+        </Main>
+      </BrowserRouter>
     </Container>
   )
 }
